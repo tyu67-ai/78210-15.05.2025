@@ -22,14 +22,11 @@
   
   </head>
   <body>
-    <!-- Główna nawigacja i pasek górny -->
     <header class="top-bar">
       <a href="https://example.com">
-        <!-- Główny tytuł strony jako h1 (tutaj logo) -->
         <img class="logo" src="./logo-25.svg" alt="Allegro 25 lat" />
       </a>
       <div class="text-size">
-        <!-- Dodaliśmy klasę "a-plus" do pierwszej ikony A+ -->
         <span class="a-plus" title="Kliknij, aby zwiększyć rozmiar czcionki">A+</span>
         <span>A+</span>
         <span>A+</span>
@@ -68,7 +65,6 @@
       </div>
     </header>
 
-    <!-- Nawigacja kategorii -->
     <nav class="dropdown-nav">
       <button class="dropbtn">Kategorie v</button>
       <div class="dropdown-content">
@@ -100,7 +96,6 @@
       </div>
     </nav>
 
-    <!-- Główna zawartość strony -->
     <main>
       <div class="container">
        <div class="banner-container">
@@ -176,7 +171,6 @@
 
     </main>
 
-    <!-- Stopka -->
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-column">
@@ -254,13 +248,12 @@
         </div>
       </div>
     </footer>
-    <!-- Skrypt odczytu tekstu dla elementów z klasą "read-on-hover" -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const hoverElements = document.querySelectorAll(".read-on-hover");
         hoverElements.forEach(element => {
           element.addEventListener("mouseenter", function () {
-            window.speechSynthesis.cancel(); // zatrzymaj poprzedni odczyt, jeśli trwa
+            window.speechSynthesis.cancel();
             let textToRead = element.innerText;
             if (textToRead.trim() !== "") {
               let speech = new SpeechSynthesisUtterance(textToRead);
