@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Kopia Allegro - projekt studenta WSB" />
+    <meta property="og:description" content="Stronę wykonał Rafał Bojarski." />
+    <title>Allegro</title>
+    <link rel="stylesheet" href="./style-1.css" />
+
+    <!-- Skrypt przełączania trybu wysokiego kontrastu -->
+   <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var contrastToggle = document.querySelector(".box");
+        if (contrastToggle) {
+          contrastToggle.addEventListener("click", function () {
+            document.body.classList.toggle("high-contrast");
+          });
+        }
+      });
+    </script>
+  
+  </head>
+  <body>
+    <!-- Główna nawigacja i pasek górny -->
+    <header class="top-bar">
+      <a href="https://example.com">
+        <!-- Główny tytuł strony jako h1 (tutaj logo) -->
+        <img class="logo" src="./logo-25.svg" alt="Allegro 25 lat" />
+      </a>
+      <div class="text-size">
+        <!-- Dodaliśmy klasę "a-plus" do pierwszej ikony A+ -->
+        <span class="a-plus" title="Kliknij, aby zwiększyć rozmiar czcionki">A+</span>
+        <span>A+</span>
+        <span>A+</span>
+        <div class="box"></div>
+      </div>
+  </head>
+  <body>
+      <div class="search-container">
+        <input type="text" class="search-box" placeholder="Czego szukasz?" />
+        <div class="dropdown">
+          <button class="dropbtn">Kategorie v</button>
+          <div class="dropdown-content">
+            <a href="#">Elektronika</a>
+            <a href="#">Moda</a>
+            <a href="#">Dom i ogród</a>
+          </div>
+        </div>
+        <button class="search-button">SZUKAJ</button>
+      </div>
+      <div class="icons">
+        <a href="dostawy.html">
+          <img class="icon" src="./truck.png" alt="Dostawy" />
+        </a>
+        <a href="ulubione.html">
+          <img class="icon" src="./heart.png" alt="Ulubione" />
+        </a>
+        <a href="wiadomosci.html">
+          <img class="icon" src="./chat.svg" alt="Wiadomości" />
+        </a>
+        <a href="powiadomienia.html">
+          <img class="icon" src="./bell.svg" alt="Powiadomienia" />
+        </a>
+        <a href="koszyk.html">
+          <img class="icon" src="./bag.png" alt="Koszyk" />
+        </a>
+      </div>
+    </header>
+
+    <!-- Nawigacja kategorii -->
+    <nav class="dropdown-nav">
+      <button class="dropbtn">Kategorie v</button>
+      <div class="dropdown-content">
+        <a href="#">Dom i ogród</a>
+        <a href="#">Elektronika</a>
+        <a href="#">Moda</a>
+      </div>
+      <div class="categories">
+        <div class="category">
+          <a href="salet.html">
+            <img class="category-icon" src="./saler.svg" alt="Allegro Days" />
+          </a>
+        </div>
+        <div class="category">
+          <a href="protect.html">
+            <img class="category-icon" src="./protect.svg" alt="Allegro Protect" />
+          </a>
+        </div>
+        <div class="category">
+          <a href="price.html">
+            <img class="category-icon" src="./price.svg" alt="Gwarancja najniższej ceny" />
+          </a>
+        </div>
+        <div class="category">
+          <a href="sell.html">
+            <img class="category-icon" src="./sell.svg" alt="Sprzedawaj na Allegro" />
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Główna zawartość strony -->
+    <main>
+      <div class="container">
+       <div class="banner-container">
+      <img src="./image 4.webp" alt="Allegro Days" />
+    </div>
+    <div class="container">
+      <div class="offer">
+        <a href="./strona produktu.html">
+          <img src="./image 11.avif" alt="Smartwatch XYZ" />
+          <p class="price-old">
+            200 zł cena z 30 dni
+            Najniższa cena oferty z 30 dni przed obniżką.
+            150 zł
+            Smartwatch XYZ
+          </p>
+          <p class="price-new">150 zł</p>
+          <p>Smartwatch XYZ</p>
+        </a>
+      </div>
+      <div class="offer">
+        <a href="./strona produktu.html">
+          <img src="./image 11.avif" alt="Smartwatch ABC" />
+          <p class="price-old">
+            200 zł cena z 30 dni
+            Najniższa cena oferty z 30 dni przed obniżką.
+            150 zł
+            Smartwatch XYZ
+          </p>
+          <p class="price-new">150 zł</p>
+          <p>Smartwatch XYZ</p>
+        </a>
+      </div>
+      <div class="offer">
+        <a href="./strona produktu.html">
+          <img src="./image 11.avif" alt="Smartwatch DEF" />
+          <p class="price-old">
+            200 zł cena z 30 dni
+            Najniższa cena oferty z 30 dni przed obniżką.
+            150 zł
+            Smartwatch XYZ
+          </p>
+          <p class="price-new">220 zł</p>
+          <p>Smartwatch XYZ</p>
+        </a>
+      </div>
+      <div class="offer">
+        <a href="./strona produktu.html">
+          <img src="./image 11.avif" alt="Smartwatch GHI" />
+          <p class="price-old">
+            200 zł cena z 30 dni
+            Najniższa cena oferty z 30 dni przed obniżką.
+            150 zł
+            Smartwatch XYZ
+          </p>
+          <p class="price-new">200 zł</p>
+          <p>Smartwatch XYZ</p>
+        </a>
+      </div>
+      <div class="offer">
+        <a href="./prototyp1.html">
+          <img src="./image 11.avif" alt="Smartwatch JKL" />
+          <p class="price-old">
+            200 zł cena z 30 dni
+            Najniższa cena oferty z 30 dni przed obniżką.
+            150 zł
+            Smartwatch XYZ
+          </p>
+          <p class="price-new">250 zł</p>
+          <p>Smartwatch XYZ</p>
+        </a>
+      </div>
+    </div>
+
+    </main>
+
+    <!-- Stopka -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h1>Allegro</h1>
+          <ul>
+            <li><a href="#">Zrównoważony rozwój</a></li>
+            <li><a href="#">Praca w Allegro</a></li>
+            <li><a href="#">Allegro Share</a></li>
+            <li><a href="#">Allegro API</a></li>
+            <li><a href="#">Allegro Ads</a></li>
+            <li><a href="#">Reklama</a></li>
+            <li><a href="#">O nas</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h2>Centrum pomocy</h2>
+          <ul>
+            <li><a href="#">Aktualności dla kupujących</a></li>
+            <li><a href="#">Pomoc dla sprzedających</a></li>
+            <li><a href="#">Pomoc dla kupujących</a></li>
+            <li><a href="#">Spytaj Społeczność</a></li>
+            <li><a href="#">Dla kupujących</a></li>
+            <li><a href="#">Regulamin</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h2>Serwisy</h2>
+          <ul>
+            <li><a href="#">Akademia Allegro</a></li>
+            <li><a href="#">Allegro Analytics</a></li>
+            <li><a href="#">Allegro Business</a></li>
+            <li><a href="#">Allegro Protect</a></li>
+            <li><a href="#">Allegro Smart!</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h2>Ustawienia</h2>
+          <ul>
+            <li><a href="#">Ustawienia wyświetlania</a></li>
+            <li><a href="#">Polityka prywatności</a></li>
+            <li><a href="#">Pliki cookies</a></li>
+          </ul>
+        </div>
+        <div class="footer-apps">
+          <h3>Pobierz aplikację</h3>
+          <div class="app-icons">
+            <a href="https://www.apple.com/app-store/" target="_blank">
+              <img src="./appstore.png" alt="App Store" />
+            </a>
+            <a href="https://appgallery.huawei.com/" target="_blank">
+              <img src="./appgallery.png" alt="App Gallery" />
+            </a>
+          </div>
+        </div>
+    
+        <div class="footer-social">
+          <h3>Obserwuj nas</h3>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank">
+              <img src="./2023_Facebook_icon.png" alt="Facebook" />
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+              <img src="./linkedin.avif" alt="LinkedIn" />
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+              <img src="./Instagram.png" alt="Instagram" />
+            </a>
+            <a href="https://www.pinterest.com/" target="_blank">
+              <img src="./pinterest-logo-png_seeklogo-273800.avif" alt="Pinterest" />
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+              <img src="./youtube-bubble-icon-a6fac4.png" alt="YouTube" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Skrypt odczytu tekstu dla elementów z klasą "read-on-hover" -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const hoverElements = document.querySelectorAll(".read-on-hover");
+        hoverElements.forEach(element => {
+          element.addEventListener("mouseenter", function () {
+            window.speechSynthesis.cancel(); // zatrzymaj poprzedni odczyt, jeśli trwa
+            let textToRead = element.innerText;
+            if (textToRead.trim() !== "") {
+              let speech = new SpeechSynthesisUtterance(textToRead);
+              speech.lang = "pl-PL";
+              window.speechSynthesis.speak(speech);
+            }
+          });
+          element.addEventListener("mouseleave", function () {
+            window.speechSynthesis.cancel();
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
